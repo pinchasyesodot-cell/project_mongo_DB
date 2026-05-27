@@ -41,10 +41,10 @@ export const getBookByNameOrByDescription = async (
   searchTerm: string,
 ): Promise<void> => {
   try {
-    const book = await db.collection(booksCollection).findOne({
+    const books = await db.collection(booksCollection).find({
       $text: { $search: searchTerm },
-    });
-    console.log("Book found:", book);
+    }).toArray();
+    console.log("Book found:", books);
   } catch (error) {
     console.error(error);
   }

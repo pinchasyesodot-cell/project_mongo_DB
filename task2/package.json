@@ -1,22 +1,24 @@
 {
-  "name": "task2",
+  "name": "project_mongo_db-task2",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.ts",
+  "description": "MongoDB aggregation pipeline exercises using Mongoose.",
+  "main": "src/app.ts",
   "scripts": {
-    "dev": "tsx watch app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/app.ts",
+    "dev": "tsx watch src/app.ts",
+    "test": "echo \"No tests configured yet.\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "mongoose": "^9.6.2",
-    "tsx": "^4.22.3"
+    "mongoose": "^9.6.2"
   }
 }

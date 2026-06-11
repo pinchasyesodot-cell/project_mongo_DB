@@ -1,11 +1,13 @@
 {
-  "name": "project_mongo_db",
+  "name": "project_mongo_db-task1",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "A books and authors management project connected to MongoDB",
+  "main": "src/app.ts",
   "scripts": {
-    "dev": "tsx watch app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/app.ts",
+    "start": "tsx src/app.ts",
+    "build": "tsc",
+    "test": "echo \"No tests configured yet.\""
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,11 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "mongodb": "^7.2.0",
-    "tsx": "^4.22.3"
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }

@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { Book } from "../interfaces/book";
+import { type Book } from "../interfaces/book.js";
 
 const bookSchema = new Schema<Book>({
   name: { type: String, required: true },

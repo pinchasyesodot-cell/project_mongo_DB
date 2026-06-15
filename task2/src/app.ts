@@ -1,4 +1,5 @@
-import { connectDB } from "./db/db.js";
+import { closeDB, connectDB } from "./db/db.js";
 import { getFilteredBooks } from "./services/bookService.js";
 await connectDB();
-getFilteredBooks();
+await getFilteredBooks();
+await closeDB();

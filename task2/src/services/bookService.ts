@@ -1,4 +1,4 @@
-import bookModel from "../models/Book";
+import bookModel from "../models/Book.js";
 
 interface FilteredBook {
   nameBook: string;

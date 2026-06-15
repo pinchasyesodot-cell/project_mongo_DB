@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { Writer } from "../interfaces/writer";
+import { type Writer } from "../interfaces/writer.js";
 
 const writerSchema = new Schema<Writer>({
   firstName: { type: String, required: true },
